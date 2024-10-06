@@ -1,0 +1,210 @@
+<!-- Implemented by - Richard Yoshioka  -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Taco Order Form</title>
+
+    <link rel="stylesheet" href="./css/test.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <img id="logo" src="./images/ricky_taco_truck_transparent.png" alt="Ricky's taco truck logo">
+        <p>My Cart</p>
+    </nav>
+    <div class="image-word-container">
+        <img class="background_image" src="./images/taco_in_city.png" alt="taco_trucks_on_gravel">
+        <p class="text-overlay">Ricky's Uber Tacos</p>
+    </div>
+    <div class="image-word-container">
+        <img class="background_image" src="./images/taco_in_lot.jpeg" alt="taco_trucks_on_lot">
+        <p class="text-overlay">Austin's Favorite Tacos</p>
+    </div>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="cards">
+                <h3 id="menu">Menu</h3>
+                <div class="card-row">
+                    <div class="card">
+                        <img src="./images/vegan_taco.jpeg" alt="Card Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Vegan Taco</h3>
+                            <p class="price">$1.99</p>
+                            <h3 class="card-subtitle">Nutrition (Per Serving)</h3>
+                            <p class="card-text">
+                                Calories: 157kcal | Carbohydrates: 27g | Protein: 13g | Fat: 1g | Fiber: 8g
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/mega_taco.jpeg" alt="Card Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Mega Taco</h3>
+                            <p class="price">$2.99</p>
+                            <h3 class="card-subtitle">Nutrition (Per Serving)</h3>
+                            <p class="card-text">
+                                Calories: 290kcal | Carbohydrates: 43g | Protein: 29g | Fat: 4g | Fiber: 20g
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-row">
+                    <div class="card">
+                        <img src="./images/ultra_taco.jpeg" alt="Card Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Ultra Taco</h3>
+                            <p class="price">$10.99</p>
+                            <h3 class="card-subtitle">Nutrition (Per Serving)</h3>
+                            <p class="card-text">
+                                Calories: 4003kcal | Carbohydrates: 143g | Protein: 120g | Fat: 20g | Fiber: 190g
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/uber_taco.png" alt="Card Image">
+                        <div class="card-content">
+                            <h3 class="card-title">Uber Taco</h3>
+                            <p class="price">$50.99</p>
+                            <h3 class="card-subtitle">Nutrition (Per Serving)</h3>
+                            <p class="card-text">
+                                Calories: 90132kcal | Carbohydrates: 1929g | Protein: 340g | Fat: 103g | Fiber: 2340g
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="drinks">Drinks</h3>
+                <div class="image-gallery">
+                    <div class="drink-image">
+                        <img src="./images/tea.png" alt="Tea">
+                        <p class="price drinks">$1.99</p>
+                    </div>
+                    <div class="drink-image">
+                        <img src="./images/water.png" alt="Water">
+                        <p class="price drinks">$0.99</p>
+                    </div>
+                    <div class="drink-image">
+                        <img src="./images/coke.png" alt="Coke">
+                        <p class="price drinks">$1.49</p>
+                    </div>
+                    <div class="drink-image">
+                        <img src="./images/dr. pepper.png" alt="Dr. Pepper">
+                        <p class="price drinks">$1.49</p>
+                    </div>
+                    <div class="drink-image">
+                        <img src="./images/orange.png" alt="Orange Juice">
+                        <p class="price drinks">$2.99</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="inputs-container">
+                <div class="inputs">
+                    <div class="top-form">
+                        <div class="logo-wrapper">
+                            <img class="image" src="./images/ricky_taco_truck_transparent.png"
+                                alt="Ricky's taco truck logo">
+                        </div>
+                        <div class="order-form">
+                            <h1>Taco Order Form</h1>
+                            <form id="phoneForm" action="./php/index-php.php" method="post">
+                                <input type="hidden" name="form-type" value="phone-number-form">
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" id="phone" name="phone" pattern="[0-9]{10}" required>
+                                <input class="button" id="submit-btn" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                    <form id="orderForm" action="./php/index-php.php" method="post" style="display:none;">
+                        <input type="hidden" name="form-type" value="order-form">
+                        <h2>Customer Information</h2>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                        <hr>
+                        <h2>Taco Order</h2>
+                        <div class="taco-order">
+                            <div class="fields">
+                                <div>
+                                    <label class="order-details" for="item">Item:</label>
+                                    <select id="item" name="item">
+                                        <option value="select-taco">- Select Taco -</option>
+                                        <option value="vegan_taco">Vegan Taco</option>
+                                        <option value="mega_taco">Mega Taco</option>
+                                        <option value="ultra_taco">Ultra Taco</option>
+                                        <option value="uber_taco">Uber Taco</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="order-details" for="quantity">Quantity:</label>
+                                    <select id="quantity" name="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                <div id="drink-container">
+                                    <label class="order-details" for="drink">Drink:</label>
+                                    <select id="drink" name="drink">
+                                        <option value="none">None</option>
+                                        <option value="tea">Tea</option>
+                                        <option value="water">Water</option>
+                                        <option value="coke">Coke</option>
+                                        <option value="drpepper">Dr. Pepper</option>
+                                        <option value="orange">Orange</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h2>Your Order</h2>
+                        <div class="resulting-facts">
+                            <label for="price">Price:</label>
+                            <br>
+                            <input type="text" id="price" name="price" readonly>
+                            <br>
+                            <label for="taco-result">Taco:</label>
+                            <br>
+                            <input type="text" id="taco-result" name="taco-result" readonly>
+                            <br>
+                            <label for="quantity-result">QTY:</label>
+                            <br>
+                            <input type="text" id="quantity-result" name="quantity-result" readonly>
+                            <br>
+                            <label for="drink-result">Drink:</label>
+                            <br>
+                            <input type="text" id="drink-result" name="drink-result" readonly>
+                        </div>
+
+                        <h3>Would you like to:</h3>
+                        <div id="bottom-buttons">
+                            <input class="button" id="complete" type="submit" value="Complete Order">
+                            <input class="button" id="clear" type="button" value="Clear Order" onclick="clearOrder()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </nav>
+        <p id="copy">&copy; 2023 Richard Yoshioka, Inc.</p>
+    </footer>
+</body>
+
+</html>

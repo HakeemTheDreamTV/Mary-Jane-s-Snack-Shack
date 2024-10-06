@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Holy Smokes';
+    src: url(../Fonts/Holy\ Smokes.woff);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Holy Smokes';
+    text-align: center;
+    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../Photos/Menu\ Items.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.testimonial {
+    padding: 30px 100px;
+}
+
+article h1 {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+article img {
+    height: 400px;
+    width: 400px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+blockquote {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 30px;
+}
+
+article h5 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 30px;
+}

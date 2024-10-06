@@ -1,0 +1,254 @@
+:root {
+  --site-color-01: #355a20;
+  --site-color-01-hover: #0e2401;
+}
+
+@font-face {
+  font-family: "Holy Smokes";
+  src: url(../Fonts/Holy\ Smokes.woff);
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 32px;
+  color: #fff;
+  font-family: "Holy Smokes";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 32px;
+  color: #fff;
+  font-family: "Holy Smokes";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 32px;
+  color: #fff;
+  font-family: "Holy Smokes";
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h6 {
+  text-align: center;
+  display: flex;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  font-family: "Holy Smokes";
+  cursor: pointer;
+}
+
+.header-main {
+  width: 100%;
+  height: 65px;
+  background-color: #586f56;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-main-logo {
+  width: fit-content;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+}
+
+.header-main-logo img {
+  height: 65px;
+  align-self: center;
+}
+
+.header-main-nav {
+  width: fit-content;
+  height: 100%;
+}
+
+.header-main-nav ul {
+  list-style: none;
+  margin-left: 10px;
+  display: flex;
+}
+
+.header-main-nav ul li {
+  display: inline;
+  float: left;
+}
+
+.header-main-nav ul li a {
+  padding: 0px 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+  line-height: 60px;
+  color: #fff;
+  display: block;
+  height: 100%;
+}
+
+.header-main-nav ul li a:hover {
+  color: #19c509;
+}
+
+.button {
+  padding: 10px 10px;
+  font-size: 25px;
+  background-color: green;
+  color: black;
+  border-radius: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-main-sm {
+  width: fit-content;
+  background-color: var(--site-color-01-hover);
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header-main-sm-fb {
+  width: 20px;
+  height: 20px;
+  background-image: url(../Photos/facebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main-sm-fb:hover {
+  background-image: url(../Photos/facebook-color.png);
+}
+
+.header-main-sm-in {
+  width: 20px;
+  height: 20px;
+  background-image: url(../Photos/instagram.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main-sm-in:hover {
+  background-image: url(../Photos/instagram-color.png);
+}
+
+/*This is the Footer*/
+.footer-main-wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.footer-main-wrapper {
+  margin: 0 auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #111;
+}
+
+.footer-main {
+  width: 100%;
+  padding: 60px 0 100px;
+  background-color: #141414;
+}
+
+.footer-main-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0, 9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.footer-bookus {
+  padding: 10px 20px;
+  margin: 15px;
+  border: 2px solid #fff;
+  font-weight: 600;
+  transition: all ease-in-out 200ms;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-bookus:hover {
+  border: 4px solid var(--site-color-01-hover);
+}
+
+.footerBottom {
+  background-color: #000;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.dsigner {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px;
+  }
+}
