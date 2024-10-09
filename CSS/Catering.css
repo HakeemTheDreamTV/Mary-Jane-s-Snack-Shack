@@ -4,76 +4,6 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* css variable  */
-:root {
-    --navbar-height: 59px;
-}
-
-/* navigation bar  */
-#navbar {
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-}
-
-#navbar::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
-}
-
-
-/*navigation bar:  logo and image  */
-
-#logo {
-    margin: 10px 24px;
-}
-
-#logo img {
-    height: 56px;
-    margin: 3px 5px;
-}
-
-/* navigation bar: list styling  */
-
-
-
-#navbar ul {
-    display: flex;
-    font-family: 'Baloo Bhai 2', cursive;
-}
-
-
-#navbar ul li {
-    /* color: white; */
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-#navbar ul li a {
-    color: white;
-    display: block;
-    padding: 3px 22px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-
-#navbar ul li a:hover {
-    color: black;
-    background-color: white;
-
-}
 
 /* home section */
 #home {
@@ -87,7 +17,8 @@ html {
 
 #home::before {
     content: "";
-    background: url('../bg1.jpg') no-repeat center center/cover;
+    background: url('../Photos/Website\ BG.jpg');
+    background-size: cover;
     position: absolute;
     top: 0px;
     left: 0px;
@@ -145,7 +76,7 @@ html {
 #client-section::before {
     content: "";
     position: absolute;
-    background: url('../bg.jpg');
+    background: url('../Photos/Website\ BG.jpg');
     width: 100%;
     height: 100%;
     z-index: -1;
