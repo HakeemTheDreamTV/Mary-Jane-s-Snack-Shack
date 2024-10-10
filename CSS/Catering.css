@@ -144,16 +144,17 @@ footer {
     font-family: 'Bree Serif', serif;
 }
 
-.btn {
+.submitbtn {
+    font-family: 'Holy Smokes';
     padding: 6px 20px;
     border: 2px solid white;
-    background-color: brown;
+    background-color: #0e2401;
     color: white;
     margin: 17px;
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
-
+    text-align: center;
 }
 
 .center {
