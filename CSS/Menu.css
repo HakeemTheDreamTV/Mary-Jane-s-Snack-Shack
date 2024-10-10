@@ -19,8 +19,9 @@
 
 body {
     background-color: black;
-    background-image: url(../Photos/Menu\ Items.jpg);
+    background-image: url(../Photos/Website\ BG.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 body h1 {
