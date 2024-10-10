@@ -49,10 +49,10 @@
 
 #services .box {
     border: 2px solid brown;
-    padding: 34px;
-    margin: 2px 6px;
+    padding: 60px;
+    margin: 10px 16px;
     border-radius: 23px;
-    background-color: #f8f6f9;
+    background-color: var(--site-color-01);
     margin-bottom: 20px;
 }
 
@@ -79,8 +79,7 @@
     height: 100%;
     z-index: -1;
     opacity: 0.7;
-    background-color: black;
-
+    background-color: #0e2401;
 }
 
 #contact-box {
