@@ -88,6 +88,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 34px;
+
 }
 
 #contact-box input,
@@ -96,6 +97,7 @@
     padding: 0.5rem;
     border-radius: 9px;
     font-size: 1.1rem;
+    background-color: white;
 }
 
 #contact-box form {
@@ -107,6 +109,22 @@
     font-family: 'Bree Serif', serif;
 }
 
+.email-button {
+    font-size: 25px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--site-color-01);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: center;
+}
+
+
+.email-button:hover {
+    background-color: #0056b3;
+}
 
 footer {
     background-color: black;
