@@ -141,6 +141,7 @@ a {
 }
 
 .header-main-sm-fb:hover {
+  cursor: pointer;
   background-image: url(../Photos/Social\ Icons/facebook.png);
 }
 
@@ -154,6 +155,7 @@ a {
 }
 
 .header-main-sm-in:hover {
+  cursor: pointer;
   background-image: url(../Photos/Social\ Icons/instagram.png);
 }
 

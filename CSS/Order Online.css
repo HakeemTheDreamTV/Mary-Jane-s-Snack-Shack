@@ -8,11 +8,17 @@
 }
 
 body {
+    background-color: #0A0A0A;
     font-family: sans-serif;
 }
 
 i {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /**
@@ -105,54 +111,75 @@ i {
 
 .shop {
     display: grid;
-    grid-template-columns: repeat(5, 223px);
+    grid-template-columns: repeat(5, 224px);
     gap: 30px;
     justify-content: center;
-}
 
-.item {
-    border: 2px solid #212529;
-    border-radius: 5px;
+    .item {
+        border: 2px solid #212529;
+        border-radius: 5px;
+        background-color: white;
+    }
 
-}
+    @media (max-width: 1230px) {
+        .shop {
+            grid-template-columns: repeat(3, 224px);
+        }
+    }
 
-@media (max-width: 1230px) {
-    .shop {
-        grid-template-columns: repeat(2, 223px);
+    @media (max-width: 500px) {
+        .shop {
+            grid-template-columns: repeat(1, 224px);
+        }
+    }
+
+
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .price-quantity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .bi-dash-lg {
+        color: red;
+    }
+
+    .bi-plus-lg {
+        columns: green;
     }
 }
 
+/**
+* ! style rules for label and buttons
+**/
 
-@media (max-width: 500px) {
-    .shop {
-        grid-template-columns: repeat(1, 223px);
-    }
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
 }
 
-.details {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-}
-
-.price-quantity {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-}
-
-.bi-dash-lg {
-    color: red;
-}
-
-.bi-plus-lg {
-    columns: green;
+.HomeBtn {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
 }
