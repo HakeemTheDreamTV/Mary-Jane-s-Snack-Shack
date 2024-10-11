@@ -37,6 +37,14 @@ let shopItemsData = [
     img: "../Shopping Cart/Food/Veggie Burger.jpg",
   },
 ];
+
+let basket = [
+  {
+    id: ";loajdsf;ojdsf",
+    item: 1,
+  },
+];
+
 let generateShop = () => {
   return (shop.innerHTML = shopItemsData
     .map((x) => {
@@ -49,9 +57,9 @@ let generateShop = () => {
                 <div class="price-quantity">
                     <h2>${price}</h2>
                     <div class="buttons">
-                        <i class="bi bi-dash-lg"></i>
+                        <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
                         <div id=${id} class="quantity">0</div>
-                        <i class="bi bi-plus-lg"></i>
+                        <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
                     </div>
                 </div>
             </div>
@@ -61,3 +69,15 @@ let generateShop = () => {
 };
 
 generateShop();
+
+let increment = (id) => {
+  let selectedItem = id;
+  console.log(id);
+};
+
+let decrement = () => {
+  let selectedItem = id;
+  console.log(id);
+};
+
+let update = () => {};
