@@ -98,39 +98,6 @@ i {
     border: 3px;
 }
 
-.header-main-sm {
-    width: fit-content;
-    background-color: var(--site-color-01-hover);
-    padding-left: 60px;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.header-main-sm-fb {
-    width: 20px;
-    height: 20px;
-    background-image: url(../Photos/facebook.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-main-sm-fb:hover {
-    background-image: url(../Photos/facebook-color.png);
-}
-
-.header-main-sm-in {
-    width: 20px;
-    height: 20px;
-    background-image: url(../Photos/instagram.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-main-sm-in:hover {
-    background-image: url(../Photos/instagram-color.png);
-}
-
 /**
 *  !Shop Items Style Here
 **/
