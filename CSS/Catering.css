@@ -35,7 +35,6 @@
 }
 
 #home p {
-    color: white;
     text-align: center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
@@ -145,7 +144,7 @@ footer {
 }
 
 .submitbtn {
-    font-family: 'Holy Smokes';
+    font-family: 'Times New Roman', Times, serif;
     padding: 6px 20px;
     border: 2px solid white;
     background-color: #0e2401;

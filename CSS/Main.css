@@ -40,8 +40,8 @@ h3 {
 }
 
 h6 {
-  text-align: center;
-  display: flex;
+  font-size: 25px;
+  align-items: center;
 }
 
 p {
@@ -52,7 +52,6 @@ p {
 }
 
 a {
-  font-size: 14px;
   line-height: 18px;
   color: #fff;
   font-family: "Holy Smokes";
@@ -68,6 +67,7 @@ a {
   background-color: #586f56;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header-main-logo {
@@ -102,11 +102,13 @@ a {
 .header-main-nav ul li a {
   padding: 0px 10px;
   font-family: "Times New Roman", Times, serif;
-  font-size: 17px;
+  font-size: 25px;
   line-height: 60px;
   color: #fff;
   display: block;
   height: 100%;
+  text-decoration: none;
+  justify-content: space-between;
 }
 
 .header-main-nav ul li a:hover {
@@ -116,15 +118,16 @@ a {
 .button {
   margin-right: 25px;
   padding: 10px 10px;
-  font-size: 25px;
+  font-size: 30px;
   background-color: green;
-  color: black;
-  border-radius: 25px;
+  color: white;
+  border-radius: 15px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 .header-main-sm {
   width: fit-content;
+  height: 75px;
   background-color: var(--site-color-01-hover);
   padding-left: 60px;
   display: flex;
@@ -223,9 +226,58 @@ footer {
   transition: 0.5s;
 }
 
+/**
+*! Slider for MAIN PAGE
+**/
+main .main-intro h1 {
+  font-size: 75px;
+  line-height: 106px;
+}
+
+main p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+main a {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  display: block;
+  background-color: var(--site-color-01);
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+/*Button*/
+
+
+/* Slider */
+.slide-1 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Photos/Food/Ghost\ Burger.jpg);
+  background-size: cover;
+}
+
+h6 {
+  font-family: 'Holy Smokes';
+  font-size: 45px;
+}
+
+.slide-2 {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Photos/Food/Chicken\ Sandwich.jpg);
+  background-size: cover;
+}
+
+/**
+* ! Footer Styles
+**/
 .footer-bookus {
   padding: 10px 20px;
-  margin: 15px;
+  margin: 5px;
   border: 2px solid #fff;
   font-weight: 600;
   transition: all ease-in-out 200ms;
@@ -238,8 +290,9 @@ footer {
 }
 
 .footerBottom {
+  position: absolute;
   background-color: #000;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 20px;
   text-align: center;
 }

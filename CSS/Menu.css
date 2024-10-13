@@ -6,15 +6,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-}
-
-.wrapper {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 body {
@@ -32,87 +23,72 @@ body h1 {
     text-align: center;
 }
 
-.img-gallery {
-    display: contents;
-    margin: 100px auto 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
 }
 
-.img-gallery img {
-    width: 100%;
-    cursor: pointer;
-}
-
-.img-gallery hover {
-    opacity: 50%;
-}
-
-.img-gallery h2 {
+h1 {
     font-size: 35px;
+    word-break: break-all;
 }
 
-* {
-    box-sizing: border-box;
+h2 {
+    font-family: serif;
 }
 
-/* Create three columns of equal width */
-.columns {
-    float: left;
-    width: 33.3%;
+h3 {
+    font-family: serif;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row>.column {
     padding: 8px;
 }
 
-/* Style the list */
-.price {
-    list-style-type: none;
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
 }
 
-/* Add shadows on hover */
-.price:hover {
-    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-/* Pricing header */
-.price .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
 }
 
-/* List items */
-.price li {
-    border-bottom: 1px solid #eee;
-    padding: 20px;
-    text-align: center;
+.content h4 {
+    color: black;
 }
 
-/* Grey list item */
-.price .grey {
-    background-color: #eee;
-    font-size: 20px;
+.content p {
+    color: black;
 }
 
-/* The "Sign Up" button */
-.button {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
 }
 
-/* Change the width of the three columns to 100%
-(to stack horizontally on small screens) */
-@media only screen and (max-width: 600px) {
-    .columns {
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
         width: 100%;
     }
 }
