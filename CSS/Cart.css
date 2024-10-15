@@ -53,3 +53,67 @@
 .header-main-nav ul li a:hover {
     color: #19c509;
 }
+
+/**
+* !FOOTER STYLE HERE
+**/
+.footer-main-wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.footer-main-wrapper {
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #111;
+}
+
+.footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+    background-color: #141414;
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0, 9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}

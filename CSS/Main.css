@@ -127,7 +127,7 @@ a {
 
 .header-main-sm {
   width: fit-content;
-  height: 75px;
+  height: 65px;
   background-color: var(--site-color-01-hover);
   padding-left: 60px;
   display: flex;
