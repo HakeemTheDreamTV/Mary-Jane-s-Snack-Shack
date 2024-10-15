@@ -68,16 +68,21 @@ h3 {
 
 /* Content */
 .content {
-    background-color: white;
+    background-color: black;
     padding: 10px;
+
+}
+
+.content h3 {
+    color: white;
 }
 
 .content h4 {
-    color: black;
+    color: white;
 }
 
 .content p {
-    color: black;
+    color: white;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
