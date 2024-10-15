@@ -168,81 +168,82 @@ h4 {
 /**
 * ! style rules for label and some buttons
 **/
+
 .text-center {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.HomeBtn {
+.HomeBtn,
+.checkout,
+.removeAll {
     background-color: #212529;
     color: white;
     border: none;
-    padding: 6dd;
+    padding: 6px;
     border-radius: 3px;
     cursor: pointer;
     margin-top: 10px;
 }
 
+.checkout {
+    background-color: green;
+}
+
+.removeAll {
+    background-color: red;
+}
+
+.bi-x-lg {
+    color: red;
+    font-weight: bold;
+}
+
 /**
-* !FOOTER STYLE HERE
+*  !Shop Items Style Here
 **/
-.footer-main-wrapper {
-    width: 300px;
-    margin: 0 auto;
-}
 
-.footer-main-wrapper {
-    margin: 0 auto;
-}
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-footer {
-    background-color: #111;
-}
-
-.footer-main {
-    width: 100%;
-    padding: 60px 0 100px;
-    background-color: #141414;
-}
-
-.footer-main-flex {
-    display: flex;
+.shop {
+    display: grid;
+    grid-template-columns: repeat(5, 224px);
+    gap: 30px;
     justify-content: center;
-    flex-wrap: wrap;
-}
+    align-items: center;
 
-.footerContainer {
-    width: 100%;
-    padding: 70px 30px 20px;
-}
+    .item {
+        border: 2px solid #212529;
+        border-radius: 5px;
+        background-color: white;
+    }
 
-.socialIcons {
-    display: flex;
-    justify-content: center;
-}
 
-.socialIcons a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 50%;
-}
 
-.socialIcons a i {
-    font-size: 2em;
-    color: black;
-    opacity: 0, 9;
-}
+    .details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        gap: 10px;
+    }
 
-/* Hover affect on social media icon */
-.socialIcons a:hover {
-    background-color: #111;
-    transition: 0.5s;
+    .price-quantity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    .bi-dash-lg {
+        color: red;
+    }
+
+    .bi-plus-lg {
+        columns: green;
+    }
 }
