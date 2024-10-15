@@ -1,12 +1,57 @@
 /**
-* ! NAVBAR STYLE STARTS HERE !
+* ! Changing default styles of the browser
+**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../Photos/Website\ BG.jpg);
+    font-family: sans-serif;
+}
+
+i {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+h4 {
+    font-size: 35px;
+    align-self: center;
+    font-weight: bold;
+    margin-right: 25px;
+    padding: 10px 10px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+
+/**
+* ! Navbar style starts HERE
 **/
 .header-main {
     width: 100%;
     height: 65px;
-    background-color: #586f56;
+    background-color: #5c705a;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header-main-logo {
@@ -30,7 +75,6 @@
     list-style: none;
     margin-left: 10px;
     display: flex;
-    align-items: center;
 }
 
 .header-main-nav ul li {
@@ -46,12 +90,97 @@
     color: #fff;
     display: block;
     height: 100%;
-    text-decoration: none;
-    justify-content: space-between;
 }
 
 .header-main-nav ul li a:hover {
     color: #19c509;
+}
+
+.header-main-sm {
+    width: fit-content;
+    height: 65px;
+    background-color: var(--site-color-01-hover);
+    padding-left: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-main-sm-fb {
+    width: 25px;
+    height: 25px;
+    background-image: url(../Photos/Social\ Icons/facebook-color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-fb:hover {
+    cursor: pointer;
+    background-image: url(../Photos/Social\ Icons/facebook.png);
+}
+
+.header-main-sm-in {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background-image: url(../Photos/Social\ Icons/instagram-color.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-in:hover {
+    cursor: pointer;
+    background-image: url(../Photos/Social\ Icons/instagram.png);
+}
+
+.navbar {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #586f56;
+    color: white;
+    padding: 25px 60px;
+    margin-bottom: 25px;
+}
+
+.cart {
+    position: relative;
+    background-color: #0e2401;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border: 3px;
+}
+
+/**
+* ! style rules for label and some buttons
+**/
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn {
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6dd;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 /**
