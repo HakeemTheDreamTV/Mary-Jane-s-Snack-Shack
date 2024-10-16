@@ -67,10 +67,9 @@ a {
 * ! NAVBAR STYLE STARTS HERE !
 **/
 .header-main {
-  position: fixed;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 65px;
   background-color: #586f56;
   display: flex;
   justify-content: space-between;
@@ -119,7 +118,7 @@ a {
 }
 
 .header-main-nav ul li a:hover {
-  color: #19c509;
+  color: #19c5099a;
 }
 
 .button {
@@ -133,9 +132,11 @@ a {
 }
 
 .header-main-sm {
+  margin-top: 15px;
   height: 100px;
   background-color: var(--site-color-01-hover);
   margin-bottom: 50px;
+  padding-top: 30px;
   padding-left: 20px;
   display: flex;
   align-items: center;
@@ -258,9 +259,6 @@ main a {
   width: fit-content;
 }
 
-/*Button*/
-
-
 /* Slider */
 .slide-1 {
   width: 100%;
@@ -279,6 +277,10 @@ main a {
 /**
 * ! Footer Styles
 **/
+.footer-main {
+  position: fixed;
+}
+
 .footer-bookus {
   padding: 10px 20px;
   margin: 5px;
