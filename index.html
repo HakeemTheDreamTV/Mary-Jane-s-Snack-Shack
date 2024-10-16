@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="CSS/Reset.css">
     <link rel="stylesheet" href="CSS/Main.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,98 +17,104 @@
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <header class="header-main">
-        <div class="header-main-logo">
-            <img src="Photos/Artwork/Website Logo.png" alt="">
-        </div>
-        <nav class="header-main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About Us.html">About Us</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="#">Merch and Gallery</a></li>
-                <li><a href="Catering.html">Events and Catering</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-        </nav>
-        <div class="header-main-sm">
-            <a href="https://www.facebook.com/profile.php?id=61567071302227">
-                <div class="header-main-sm-fb"></div>
-            </a>
-            <a href="https://www.instagram.com/maryjanessnackshack/"></a>
-            <div class="header-main-sm-in"></div></a>
-            <a href="Order Online.html"><button class="button">Order Online</button></a>
-        </div>
-    </header>
-    <!--The hero section of my website-->
-    <main>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
+    <div class="wrapper-main">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <header class="header-main">
+            <div class="header-main-logo">
+                <img src="Photos/Artwork/Website Logo.png" alt="">
+            </div>
+            <nav class="header-main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="#">Merch and Gallery</a></li>
+                    <li><a href="Catering.html">Events and Catering</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+            <div class="header-main-sm">
+                <a href="https://www.facebook.com/profile.php?id=61567071302227">
+                    <div class="header-main-sm-fb"></div>
+                </a>
+                <a href="https://www.instagram.com/maryjanessnackshack/"></a>
+                <div class="header-main-sm-in"></div></a>
+                <a href="Order Online.html"><button class="button">Order Online</button></a>
+            </div>
+        </header>
+        <!--The hero section of my website-->
+        <main>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
 
-                <div class="carousel-item text-center bg-dark vh-100 active slide-1">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h3 class="text-white align-items-center">Welcome to Mary Jane's!</h3>
-                                <h1 class="display 1 text-white">We TREAT you like FAMILY</h1>
-                                <a href="Order Online.html"><button class="button">Order Online</button></a>
+                    <div class="carousel-item text-center bg-dark vh-100 active slide-1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h3 class="text-white align-items-center">Welcome to Mary Jane's!</h3>
+                                    <h1 class="display 1 text-white">We TREAT you like FAMILY</h1>
+                                    <a href="Order Online.html"><button class="button">Order Online</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item text-center bg-dark vh-100 active slide-2">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h3 class="text-white align-items-center">Welcome to Mary Jane's!</h3>
-                                <h1 class="display 1 text-white">We TREAT you like FAMILY</h1>
-                                <a href="Order Online.html"><button class="button">Order Online</button></a>
+                    <div class="carousel-item text-center bg-dark vh-100 active slide-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <h3 class="text-white align-items-center">Welcome to Mary Jane's!</h3>
+                                    <h1 class="display 1 text-white">We TREAT you like FAMILY</h1>
+                                    <a href="Order Online.html"><button class="button">Order Online</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </main>
+        </main>
 
 
-    <!--The Footer of the Website-->
-    <footer class="footer-main">
-        <div class="footer-main-wrapper footer-main-flex">
+        <!--The Footer of the Website-->
+        <footer class="footer-main">
+            <div class="footer-main-wrapper footer-main-flex">
 
-            <a class="footer-bookus text-white" href="#">BOOK US</a>
+                <a class="footer-bookus text-white" href="#">BOOK US</a>
 
-            <div class="footContainer">
-                <div class="socialIcons">
-                    <a href="https://www.facebook.com/profile.php?id=61567071302227"><i
-                            class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/maryjanessnackshack/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://x.com/MaryJanesSnack"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.twitch.tv/maryjanessnackshack"><i class="fa-brands fa-twitch"></i></a>
-                    <a href="https://www.youtube.com/@MaryJanesSnackShack"><i class="fa-brands fa-youtube"></i></a>
-                </div>
+                <div class="footContainer">
+                    <div class="socialIcons">
+                        <a href="https://www.facebook.com/profile.php?id=61567071302227"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/maryjanessnackshack/"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/MaryJanesSnack"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.twitch.tv/maryjanessnackshack"><i class="fa-brands fa-twitch"></i></a>
+                        <a href="https://www.youtube.com/@MaryJanesSnackShack"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
 
-                <div class="footerBottom">
-                    <p>Copyright &copy;2024; Designed By <span class="desiner">Darian Hakeem</span></p>
+                    <div class="footerBottom">
+                        <p>Copyright &copy;2024; Designed By <span class="desiner">Darian Hakeem</span></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        </div>
+    </div>
 
     </footer>
+    </div>
+
 
 </body>
 
