@@ -21,7 +21,6 @@ body h1 {
     font-weight: bold;
     font-family: 'Holy Smokes';
     color: white;
-    text-align: center;
 }
 
 /* Center website */
@@ -33,6 +32,8 @@ body h1 {
 h1 {
     font-size: 35px;
     word-break: break-all;
+    text-align: center;
+    align-self: center;
 }
 
 h2 {

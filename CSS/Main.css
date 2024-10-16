@@ -1,6 +1,7 @@
 :root {
   --site-color-01: #355a20;
   --site-color-01-hover: #0e2401;
+  background-image: url(../Photos/Website\ BG.jpg);
 }
 
 @font-face {
@@ -12,7 +13,13 @@ body {
   background-color: #1e1e1e;
 }
 
+.wrapper-main {
+  width: 1000;
+  margin: 0 auto;
+}
+
 h1 {
+  display: flex;
   font-size: 26px;
   line-height: 32px;
   color: #fff;
@@ -25,29 +32,27 @@ h2 {
   font-size: 26px;
   line-height: 32px;
   color: #fff;
-  font-family: "Holy Smokes";
   font-weight: 600;
   text-transform: uppercase;
 }
 
 h3 {
+  display: flex;
   font-size: 26px;
   line-height: 32px;
   color: #fff;
-  font-family: "Holy Smokes";
   font-weight: 600;
   text-transform: uppercase;
 }
 
 h6 {
-  font-size: 25px;
+  font-size: 30px;
   align-items: center;
 }
 
 p {
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -62,8 +67,10 @@ a {
 * ! NAVBAR STYLE STARTS HERE !
 **/
 .header-main {
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 65px;
+  height: 100vh;
   background-color: #586f56;
   display: flex;
   justify-content: space-between;
@@ -126,10 +133,10 @@ a {
 }
 
 .header-main-sm {
-  width: fit-content;
-  height: 65px;
+  height: 100px;
   background-color: var(--site-color-01-hover);
-  padding-left: 60px;
+  margin-bottom: 50px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
   column-gap: 10px;
@@ -181,12 +188,14 @@ a {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
   background-color: #111;
 }
 
 .footer-main {
   width: 100%;
-  padding: 60px 0 100px;
+  padding: 20px 50px;
   background-color: #141414;
 }
 
@@ -260,11 +269,6 @@ main a {
   background-size: cover;
 }
 
-h6 {
-  font-family: 'Holy Smokes';
-  font-size: 45px;
-}
-
 .slide-2 {
   width: 100%;
   height: auto;
@@ -290,14 +294,13 @@ h6 {
 }
 
 .footerBottom {
-  position: absolute;
   background-color: #000;
   margin-top: 10px;
   padding: 20px;
-  text-align: center;
 }
 
 .footerBottom p {
+  text-align: center;
   color: white;
 }
 
@@ -313,5 +316,32 @@ h6 {
   .socialIcons a {
     padding: 8px;
     margin: 4px;
+  }
+}
+
+/**
+* ! mobile version
+**/
+
+@media only screen and (max-width: 600px) {
+  .wrapper-main {
+    width: 100%;
+  }
+
+  .header-main-logo {
+    padding-right: 20px;
+  }
+
+  .header-main-nav {
+    display: none;
+  }
+
+  .header-main-sm {
+    padding-right: 20px;
+
+  }
+
+  .button {
+    display: none;
   }
 }

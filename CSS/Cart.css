@@ -9,7 +9,7 @@
 
 body {
     background-image: url(../Photos/Website\ BG.jpg);
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 i {
@@ -19,51 +19,34 @@ i {
 a {
     text-decoration: none;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 h2 {
     font-size: 27px;
     font-weight: bold;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
 h3 {
     font-weight: bold;
     font-size: 17px;
-}
-
-h4 {
-    font-size: 35px;
-    align-self: center;
-    font-weight: bold;
-    margin-right: 25px;
-    padding: 10px 10px;
-    background-color: green;
-    color: white;
-    border-radius: 10px;
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
 /**
-* ! Navbar style starts HERE
+* ! NAVBAR STYLE STARTS HERE !
 **/
 .header-main {
+    position: fixed;
+    top: 0;
     width: 100%;
-    height: 65px;
-    background-color: #5c705a;
+    height: 100vh;
+    background-color: #586f56;
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
     align-items: center;
-}
-
-.header-main-logo {
-    width: fit-content;
-    height: 100%;
-    background-color: #000;
-    display: flex;
-}
-
-.header-main-logo img {
-    height: 65px;
-    align-self: center;
 }
 
 .header-main-nav {
@@ -75,6 +58,7 @@ h4 {
     list-style: none;
     margin-left: 10px;
     display: flex;
+    align-items: center;
 }
 
 .header-main-nav ul li {
@@ -90,6 +74,8 @@ h4 {
     color: #fff;
     display: block;
     height: 100%;
+    text-decoration: none;
+    justify-content: space-between;
 }
 
 .header-main-nav ul li a:hover {
@@ -98,17 +84,18 @@ h4 {
 
 .header-main-sm {
     width: fit-content;
-    height: 65px;
+    height: 100px;
     background-color: var(--site-color-01-hover);
     padding-left: 60px;
     display: flex;
     align-items: center;
     column-gap: 10px;
+
 }
 
 .header-main-sm-fb {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-image: url(../Photos/Social\ Icons/facebook-color.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,8 +107,8 @@ h4 {
 }
 
 .header-main-sm-in {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
     background-image: url(../Photos/Social\ Icons/instagram-color.png);
     background-repeat: no-repeat;
@@ -132,6 +119,7 @@ h4 {
     cursor: pointer;
     background-image: url(../Photos/Social\ Icons/instagram.png);
 }
+
 
 .navbar {
     align-items: center;
@@ -145,18 +133,31 @@ h4 {
     margin-bottom: 25px;
 }
 
+.navbar-btn {
+    font-size: 50px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
 .cart {
+    margin-bottom: 10px;
     position: relative;
+    right: 50px;
     background-color: #0e2401;
     color: white;
     padding: 5px;
-    border-radius: 4px;
+    border-radius: 5px;
     align-items: center;
 }
 
 .cartAmount {
     position: absolute;
-    top: -15px;
+    top: -20px;
     right: -10px;
     font-size: 16px;
     background-color: red;
@@ -170,13 +171,15 @@ h4 {
 **/
 
 .text-center {
+    align-items: center;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .HomeBtn,
 .checkout,
 .removeAll {
+    align-items: center;
     background-color: #212529;
     color: white;
     border: none;
@@ -195,6 +198,12 @@ h4 {
     background-color: red;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
 .bi-x-lg {
     color: red;
     font-weight: bold;
@@ -205,10 +214,19 @@ h4 {
 **/
 
 .shopping-cart {
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 50px;
     display: grid;
-    grid-template-columns: repeat(1, 320px);
+    grid-template-columns: repeat(2, 224px);
     justify-content: center;
     gap: 15px;
+}
+
+.item {
+    border: 2px solid #212529;
+    border-radius: 5px;
+    background-color: white;
 }
 
 /**
@@ -216,12 +234,16 @@ h4 {
 **/
 
 .cart-item {
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
     border: 2px solid #212529;
     border-radius: 5px;
     display: flex;
 }
 
 .title-price-x {
+    align-items: center;
     width: 195px;
     display: flex;
     align-items: center;
@@ -230,14 +252,125 @@ h4 {
 }
 
 .title-price {
+    align-items: center;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 .cart-item-price {
+    align-items: center;
     background-color: #212529;
     color: white;
     border-radius: 4px;
     padding: 3px 6px;
+}
+
+/**
+* !FOOTER STYLE HERE
+**/
+.footer-main-wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.footer-main-wrapper {
+    margin: 0 auto;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #111;
+}
+
+.footer-main {
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #141414;
+}
+
+.footer-main-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0, 9;
+}
+
+/* Hover affect on social media icon */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+/**
+* ! Footer Styles
+**/
+.footer-bookus {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #fff;
+    font-weight: 600;
+    transition: all ease-in-out 200ms;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-bookus:hover {
+    border: 4px solid var(--site-color-01-hover);
+}
+
+.footerBottom {
+    background-color: #000;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.footerBottom p {
+    text-align: center;
+    color: white;
+}
+
+.dsigner {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .socialIcons a {
+        padding: 8px;
+        margin: 4px;
+    }
 }

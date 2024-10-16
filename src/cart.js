@@ -19,7 +19,7 @@ let generateCartItems = () => {
         let search = shopItemsData.find((y) => y.id === id) || [];
         return `
       <div class="cart-item">
-        <img width="100" src=${search.img} alt="" />
+        <img width="50" src=${search.img} alt="" />
         <div class="details">
 
           <div class="title-price-x">

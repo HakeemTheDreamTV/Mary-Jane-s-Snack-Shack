@@ -9,149 +9,33 @@
 
 body {
     background-image: url(../Photos/Website\ BG.jpg);
-    font-family: sans-serif;
-}
-
-i {
-    cursor: pointer;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-h2 {
-    font-size: 27px;
-    font-weight: bold;
-}
-
-h3 {
-    font-weight: bold;
-    font-size: 17px;
-}
-
-h4 {
-    font-size: 35px;
-    align-self: center;
-    font-weight: bold;
-    margin-right: 25px;
-    padding: 10px 10px;
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-}
-
-/**
-* ! Navbar style starts HERE
-**/
-.header-main {
-    width: 100%;
-    height: 65px;
-    background-color: #5c705a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-main-logo {
-    width: fit-content;
-    height: 100%;
-    background-color: #000;
-    display: flex;
-}
-
-.header-main-logo img {
-    height: 65px;
-    align-self: center;
-}
-
-.header-main-nav {
-    width: fit-content;
-    height: 100%;
-}
-
-.header-main-nav ul {
-    list-style: none;
-    margin-left: 10px;
-    display: flex;
-}
-
-.header-main-nav ul li {
-    display: inline;
-    float: left;
-}
-
-.header-main-nav ul li a {
-    padding: 0px 10px;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 25px;
-    line-height: 60px;
-    color: #fff;
-    display: block;
-    height: 100%;
-}
-
-.header-main-nav ul li a:hover {
-    color: #19c509;
-}
-
-.header-main-sm {
-    width: fit-content;
-    height: 65px;
-    background-color: var(--site-color-01-hover);
-    padding-left: 60px;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.header-main-sm-fb {
-    width: 25px;
-    height: 25px;
-    background-image: url(../Photos/Social\ Icons/facebook-color.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-main-sm-fb:hover {
-    cursor: pointer;
-    background-image: url(../Photos/Social\ Icons/facebook.png);
-}
-
-.header-main-sm-in {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
-    background-image: url(../Photos/Social\ Icons/instagram-color.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.header-main-sm-in:hover {
-    cursor: pointer;
-    background-image: url(../Photos/Social\ Icons/instagram.png);
 }
 
 .navbar {
     align-items: center;
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: #586f56;
     color: white;
-    padding: 25px 60px;
-    margin-bottom: 25px;
+}
+
+.navbar-btn {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
 }
 
 .cart {
+    font-family: 'Times New Roman', Times, serif;
     position: relative;
     background-color: #0e2401;
     color: white;
     padding: 5px;
-    border-radius: 4px;
-    align-items: center;
+    border-radius: 5px;
 }
 
 .cartAmount {
@@ -163,14 +47,15 @@ h4 {
     color: white;
     padding: 3px;
     border: 3px;
+    align-items: center;
 }
 
 /**
 *  !Shop Items Style Here
 **/
-
-
 .shop {
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: repeat(5, 224px);
     gap: 30px;
@@ -178,6 +63,7 @@ h4 {
     align-items: center;
 
     .item {
+        font-family: 'Times New Roman', Times, serif;
         border: 2px solid #212529;
         border-radius: 5px;
         background-color: white;
@@ -186,6 +72,7 @@ h4 {
 
 
     .details {
+        font-family: 'Times New Roman', Times, serif;
         display: flex;
         flex-direction: column;
         padding: 10px;
@@ -193,6 +80,7 @@ h4 {
     }
 
     .price-quantity {
+        font-family: 'Times New Roman', Times, serif;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -212,68 +100,4 @@ h4 {
     .bi-plus-lg {
         columns: green;
     }
-}
-
-/**
-* !FOOTER STYLE HERE
-**/
-.footer-main-wrapper {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.footer-main-wrapper {
-    margin: 0 auto;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-footer {
-    background-color: #111;
-}
-
-.footer-main {
-    width: 100%;
-    padding: 60px 0 100px;
-    background-color: #141414;
-}
-
-.footer-main-flex {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.footerContainer {
-    width: 100%;
-    padding: 70px 30px 20px;
-}
-
-.socialIcons {
-    display: flex;
-    justify-content: center;
-}
-
-.socialIcons a {
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    margin: 10px;
-    border-radius: 50%;
-}
-
-.socialIcons a i {
-    font-size: 2em;
-    color: black;
-    opacity: 0, 9;
-}
-
-/* Hover affect on social media icon */
-.socialIcons a:hover {
-    background-color: #111;
-    transition: 0.5s;
 }
