@@ -19,8 +19,6 @@ body {
 }
 
 .navbar-btn {
-    font-size: 2rem;
-    font-weight: bold;
     background-color: green;
     color: white;
     font-family: 'Times New Roman', Times, serif;

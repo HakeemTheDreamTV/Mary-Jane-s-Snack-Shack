@@ -66,6 +66,7 @@ a {
 * ! NAVBAR STYLE STARTS HERE !
 **/
 .header-main {
+  position: relative;
   top: 0;
   width: 100%;
   height: 65px;
@@ -285,7 +286,7 @@ main a {
 * ! Footer Styles
 **/
 .footer-main {
-  position: fixed;
+  position: relative;
 }
 
 .footer-bookus {
@@ -417,7 +418,7 @@ main a {
 
   /* Slider */
   .slide-1 {
-    width: fit-content;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Photos/Food/Ghost\ Burger.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -425,7 +426,7 @@ main a {
   }
 
   .slide-2 {
-    width: fit-content;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Photos/Food/Chicken\ Sandwich.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -438,6 +439,10 @@ main a {
 
   h3 {
     align-items: center;
+  }
+
+  .footer-main {
+    position: fixed;
   }
 
   .footerBottom {
