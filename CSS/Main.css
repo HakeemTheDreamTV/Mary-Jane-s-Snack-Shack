@@ -333,7 +333,7 @@ main a {
 /**
 *! mobile style
 **/
-@media(max-width: 600px) {
+@media(max-width: 1200px) {
   .links-container {
     flex-direction: column;
     align-items: flex-start;
@@ -375,4 +375,12 @@ main a {
     left: 0;
     z-index: 9;
   }
+}
+
+
+/**
+* ! Footer Styles
+**/
+.footer-main {
+  position: bottom;
 }
