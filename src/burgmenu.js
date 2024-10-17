@@ -8,7 +8,7 @@ burgerBtn.oneclick = function () {
     burgerMenu.style.display = "block";
     burgerBtn.style.display = "center left 50px center";
     isBurgerOpen = ture;
-  } else if (iBurgerOpen) {
+  } else if (isBurgerOpen) {
     burgerMenu.style.display = "none";
     burgerBtn.style.backgroundPosition = "center, center left 50px";
     isBurgerOpen = false;
