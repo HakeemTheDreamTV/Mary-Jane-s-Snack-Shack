@@ -23,9 +23,8 @@ h1 {
   font-size: 26px;
   line-height: 32px;
   color: #fff;
-  font-family: "Holy Smokes";
   font-weight: 600;
-  text-transform: uppercase;
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 
 h2 {
@@ -42,7 +41,7 @@ h3 {
   line-height: 32px;
   color: #fff;
   font-weight: 600;
-  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h6 {
@@ -122,6 +121,16 @@ a {
 }
 
 .button {
+  margin-right: 25px;
+  padding: 10px 10px;
+  font-size: 30px;
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-button {
   margin-right: 25px;
   padding: 10px 10px;
   font-size: 30px;
@@ -253,7 +262,6 @@ main a {
   margin-bottom: 20px;
   font-size: 18px;
   display: block;
-  background-color: var(--site-color-01);
   padding: 10px 20px;
   width: fit-content;
 }
@@ -281,6 +289,7 @@ main a {
 }
 
 .footer-bookus {
+  color: white;
   padding: 10px 20px;
   margin: 5px;
   border: 2px solid #fff;
@@ -297,7 +306,7 @@ main a {
 .footerBottom {
   background-color: #000;
   margin-top: 10px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .footerBottom p {
@@ -320,29 +329,120 @@ main a {
   }
 }
 
+.burger-menu,
+.burger-menu-btn {
+  display: none;
+}
+
 /**
 * ! mobile version
 **/
 
 @media only screen and (max-width: 600px) {
-  .wrapper-main {
+
+  .burger-menu-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../Photos/icons/hamburger.png), url(../Photos/icons/close.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center left 50px;
+  }
+
+  .burger-menu {
+    display: none;
+    position: fixed;
     width: 100%;
+    height: 100vh;
+    z-index: 900;
+    background-color: #111;
+  }
+
+  .burger-menu ul {
+    width: 100%;
+    height: calc(100vh-60px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .burger-menu ul li {
+    flex-basis: 100%;
+    border-top: 2px solid #000;
+  }
+
+  .burger-menu ul li:last-child {
+    border-top: 2px solid #000;
+  }
+
+  .burger-menu ul li a {
+    display: block;
+    height: 100%;
+    font-size: 3rem;
+    padding: 30px 0;
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .wrapper-main {
+    width: calc(100%-20px)
   }
 
   .header-main-logo {
-    padding-right: 20px;
+    size: 50px;
   }
 
   .header-main-nav {
+    position: fixed;
     display: none;
-  }
-
-  .header-main-sm {
-    padding-right: 20px;
-
   }
 
   .button {
     display: none;
   }
-}
+
+  .main-button {
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .header-main-sm {
+    padding-right: 20px;
+  }
+
+  /* Slider */
+  .slide-1 {
+    width: fit-content;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Photos/Food/Ghost\ Burger.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slide-2 {
+    width: fit-content;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Photos/Food/Chicken\ Sandwich.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  h1 {
+    align-items: center;
+  }
+
+  h3 {
+    align-items: center;
+  }
+
+  .footer-main {}
+
+  .footerBottom {
+    background-color: #000;
+    margin-top: 10px;
+    padding: 10px;
+  }
