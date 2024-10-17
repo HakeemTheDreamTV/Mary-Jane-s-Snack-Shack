@@ -439,10 +439,9 @@ main a {
     align-items: center;
   }
 
-  .footer-main {}
-
   .footerBottom {
     background-color: #000;
     margin-top: 10px;
     padding: 10px;
   }
+}
