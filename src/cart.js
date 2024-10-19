@@ -125,7 +125,7 @@ let TotalAmount = () => {
     // console.log(amount);
     label.innerHTML = `
     <h2>Total Bill : $ ${amount}</h2>
-    <a href="Checkout Form.html">
+    <a href="https://buy.stripe.com/00g6pn61U3ol8fK5kk">
     <button class="checkout">Place Order</button>
     </a>
     <button onclick="clearCart()" class="removeAll">Clear Cart</button>
