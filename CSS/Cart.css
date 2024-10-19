@@ -245,6 +245,7 @@ a {
 **/
 
 .cart-item {
+    background-color: white;
     border: 2px solid #212529;
     border-radius: 5px;
     display: flex;
@@ -252,6 +253,7 @@ a {
 
 .title-price-x {
     width: 195px;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
