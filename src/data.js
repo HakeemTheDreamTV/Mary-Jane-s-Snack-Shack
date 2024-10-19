@@ -4,7 +4,7 @@ let shopItemsData = [
     name: "Mary Jane's Loaded Burger",
     price: "15",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    img: "Photos/Food/Ghost Burger.jpg",
+    img: "Photos/Food/MJ's Loaded Burger",
   },
   {
     id: "ajmgsffkmwsarg",
