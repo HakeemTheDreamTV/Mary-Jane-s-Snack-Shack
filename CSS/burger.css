@@ -26,7 +26,7 @@ nav {
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -37,7 +37,6 @@ nav a {
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
-  justify-content: column
 }
 
 nav a:hover {
@@ -83,6 +82,7 @@ nav svg {
     width: 100%;
     padding: 20px 30px;
     justify-content: flex-start;
+    disply: column
   }
 
   .open-sidebar-button,
