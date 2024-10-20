@@ -106,4 +106,9 @@ nav svg {
   .header-main-sm {
     display: none;
   }
+
+  .header-main-nav ul {
+    display: list-item;
+    align-items: center;
+  }
 }
