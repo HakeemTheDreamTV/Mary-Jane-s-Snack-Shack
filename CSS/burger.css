@@ -81,21 +81,25 @@ nav svg {
     height: auto;
     width: 100%;
     padding: 20px 30px;
-    justify-content: flex-start;
-    disply: column
+  }
+
+  .open-sidebar-button {
+    position: relative;
+    right: 10px;
   }
 
   .open-sidebar-button,
   .close-sidebar-button {
     padding: 20px;
     display: block;
+    position: absolute;
   }
 
-  #sidebar-active:checked~.links-container {
+  #sidebar-active:checked.links-container {
     right: 0;
   }
 
-  #sidebar-active:checked~#overlay {
+  #sidebar-active:checked#overlay {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -105,11 +109,23 @@ nav svg {
   }
 
   .header-main-sm {
+    align-items: center;
+    position: relative;
+    right: 425px;
+    background-color: #586f56;
+    /* border: 2px solid red; */
+  }
+
+  .button {
     display: none;
   }
 
   .header-main-nav ul {
+    position: fixed;
+    top: 50px;
     display: list-item;
     align-items: center;
   }
+
+  .header-main-nav ul li a {}
 }

@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+}
+
+.card {
+    align-items: center;
+    border-radius: 50px;
+    margin: 8px;
+}
+
+.card img {
+    border: 2px solid #121212;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
