@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 nav .home-link {
-  margin-right: auto;
+  margin-left: auto;
 }
 
 nav svg {
@@ -82,6 +82,7 @@ nav svg {
     width: 100%;
     padding: 20px 30px;
     justify-content: flex-start;
+    disply: column
   }
 
   .open-sidebar-button,
