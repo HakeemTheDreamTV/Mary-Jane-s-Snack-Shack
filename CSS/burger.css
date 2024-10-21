@@ -123,7 +123,6 @@ nav svg {
 
   .header-main-nav ul {
     background-color: white;
-    opacity: 50%;
     position: fixed;
     top: 50px;
     display: list-item;
