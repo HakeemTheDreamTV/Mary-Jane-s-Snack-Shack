@@ -1,15 +1,23 @@
-h1 {
-    text-align: center;
-}
+.column {}
 
 .card {
     align-items: center;
     border-radius: 50px;
-    margin: 8px;
+    margin: 20px;
 }
 
 .card img {
+    margin-top: 10px;
     border: 2px solid #121212;
+}
+
+.card h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.card p {
+    text-align: center;
 }
 
 @media screen and (max-width: 650px) {
@@ -17,4 +25,8 @@ h1 {
         width: 100%;
         display: block;
     }
+}
+
+.footer-main {
+    position: fixed;
 }
