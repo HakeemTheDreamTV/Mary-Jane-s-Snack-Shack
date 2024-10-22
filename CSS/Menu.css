@@ -34,10 +34,13 @@ body h1 {
 
 h2 {
     font-family: serif;
+    position: relative;
+    left: 250px;
 }
 
-h3 {
-    font-family: serif;
+h6 {
+    position: relative;
+    left: 250px;
 }
 
 .row {
