@@ -7,37 +7,14 @@
 
 /* home section */
 #home {
+    background-color: #212529;
+    color: white;
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
     height: 550px;
     justify-content: center;
     align-items: center;
-}
-
-#home::before {
-    content: "";
-    background: url('../Photos/Website\ BG.jpg');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 642px;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.89;
-}
-
-#home h1 {
-    color: white;
-    text-align: center;
-    font-family: 'Bree Serif', serif;
-}
-
-#home p {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Bree Serif', serif;
 }
 
 /* service section  */
