@@ -1,8 +1,12 @@
 section {
     .section-event-container {
+        background-color: white;
         font-family: "Roboto", sans-serif;
         max-width: 800px;
         margin: 0 auto;
+        box-sizing: border-box;
+        border-radius: 10px;
+        align-content: center;
 
         .event-container h3.year {
             font-size: 100px;
