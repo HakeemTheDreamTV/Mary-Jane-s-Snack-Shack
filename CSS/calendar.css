@@ -5,8 +5,8 @@ section {
         margin: 0 auto;
 
         .event-container h3.year {
-            font-size: 40px;
-            text-align: center;
+            font-size: 100px;
+            font-weight: bold;
             border-bottom: 1px solid #b1b1b1;
         }
 
@@ -30,13 +30,13 @@ section {
             border-radius: 8px 0 0 8px;
         }
 
-        .event .event-left .date {
+        .event .event-left .month {
             font-size: 56px;
         }
 
-        .event .event-left .month {
-            font-size: 16px;
-            font-weight: normal;
+        .event .event-left .date {
+            font-size: 30px;
+            font-weight: bold;
         }
 
         .event .event-right {
