@@ -112,9 +112,13 @@ nav svg {
   .header-main-sm {
     align-items: center;
     position: relative;
-    right: 425px;
+    right: 80px;
     background-color: #586f56;
     /* border: 2px solid red; */
+  }
+
+  .header-main-sm on open {
+    display: none;
   }
 
   .button {
@@ -126,7 +130,6 @@ nav svg {
     position: fixed;
     top: 50px;
     display: list-item;
-    align-items: center;
   }
 
   .header-main-nav ul li a {

@@ -19,12 +19,14 @@ body {
 }
 
 .navbar-btn {
-    background-color: green;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, Georgia, serif;
+    position: relative;
+    padding-left: 1%;
+    align-items: center;
     text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    /* border: 2px solid red; */
 }
 
 .cart {
@@ -34,6 +36,7 @@ body {
     color: white;
     padding: 5px;
     border-radius: 5px;
+    left: 200px;
 }
 
 .cartAmount {
@@ -46,6 +49,12 @@ body {
     padding: 3px;
     border: 3px;
     align-items: center;
+}
+
+.header-main-sm {
+    font-size: 35px;
+    background-color: #586f56;
+    right: 200px;
 }
 
 /**
@@ -97,5 +106,23 @@ body {
 
     .bi-plus-lg {
         columns: green;
+    }
+}
+
+@media (max-width: 1100px) {
+    .shop {
+        grid-template-columns: repeat(3, 223px);
+    }
+}
+
+@media (max-width: 730px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
     }
 }

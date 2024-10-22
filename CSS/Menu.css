@@ -16,7 +16,10 @@ body {
     background-position: center;
 }
 
+
 body h1 {
+    position: relative;
+    left: 225px;
     font-size: 75px;
     font-weight: bold;
     font-family: 'Holy Smokes';
@@ -27,13 +30,6 @@ body h1 {
 .main {
     max-width: 1000px;
     margin: auto;
-}
-
-h1 {
-    font-size: 35px;
-    word-break: break-all;
-    text-align: center;
-    align-self: center;
 }
 
 h2 {
@@ -58,6 +54,7 @@ h3 {
 .column {
     float: left;
     width: 25%;
+    margin: 10px;
 }
 
 /* Clear floats after rows */
@@ -69,21 +66,34 @@ h3 {
 
 /* Content */
 .content {
-    background-color: black;
+    box-sizing: border-box;
+    border: 2px solid #212529;
+    position: relative;
+    background-color: white;
     padding: 10px;
+    margin-right: 565px;
+    left: 250px;
+}
 
+.content img {
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
 .content h3 {
-    color: white;
+    margin-left: 25px;
+    color: black;
 }
 
 .content h4 {
-    color: white;
+    text-align: center;
+    color: black;
 }
 
 .content p {
-    color: white;
+    text-align: center;
+    color: black;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
