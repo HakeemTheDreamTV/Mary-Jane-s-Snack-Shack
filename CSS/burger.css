@@ -60,7 +60,7 @@ nav svg {
   display: none;
 }
 
-@media(max-width: 1200px) {
+@media(max-width: 1322px) {
   .links-container {
     flex-direction: column;
     align-items: flex-start;
@@ -137,3 +137,11 @@ nav svg {
     color: #212529;
   }
 }
+
+@media(max-width: 768px) {}
+
+@media(max-width: 425px) {}
+
+@media(max-width: 375px) {}
+
+@media(max-width: 320px) {}

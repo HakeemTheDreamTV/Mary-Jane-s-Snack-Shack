@@ -1,29 +1,176 @@
-.column {}
-
-.card {
-    align-items: center;
-    border-radius: 50px;
-    margin: 20px;
-}
-
-.card img {
-    margin-top: 10px;
-    border: 2px solid #121212;
-}
-
-.card h2 {
-    font-family: 'Times New Roman', Times, serif;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, Georgia, serif;
     text-align: center;
+    color: #fff;
+    list-style: 1.5;
+    letter-spacing: 1px;
+
 }
 
-.card p {
-    text-align: center;
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../Photos/Website\ BG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@media screen and (max-width: 650px) {
+.testimonial {
+    padding: 30px 100px;
+}
+
+article h2 {
+    font-size: 50px;
+    font-weight: 545;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+article h1:after {
+    height: 5px;
+    width: 225px;
+    background-color: #fff;
+    display: block;
+    margin: auto;
+}
+
+article img {
+    height: 350px;
+    width: 350px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+article p {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+blockquote {
+    font-family: sans-serif;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+@media(max-width: 1024px) {
     .column {
         width: 100%;
         display: block;
+    }
+}
+
+@media(max-width: 768px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .testimonial {
+        padding: 20px 20px;
+    }
+
+    article img {
+        height: 250px;
+        width: 250px;
+    }
+
+    article p {
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    blockquote {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .testimonial {
+        padding: 20px 20px;
+    }
+
+    article img {
+        height: 200px;
+        width: 200px;
+    }
+
+    article p {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: 30px;
+    }
+
+    blockquote {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 375px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .testimonial {
+        padding: 15px 15px;
+    }
+
+    article img {
+        height: 200px;
+        width: 200px;
+    }
+
+    article p {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: 30px;
+    }
+
+    blockquote {
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 320px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+
+    .testimonial {
+        padding: 5px 5px;
+    }
+
+    article img {
+        height: 150px;
+        width: 150px;
+    }
+
+    article p {
+        text-transform: uppercase;
+        font-size: 10px;
+        margin-top: 30px;
+    }
+
+    blockquote {
+        font-size: 15px;
+        margin-top: 30px;
     }
 }
 
